@@ -109,26 +109,6 @@ console.log(newFruits);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-**2.4. Spreading elements on function calls:**
-
-```js
-let fruits = ["Apple", "Orange", "Banana"];
-
-const getFruits = (f1, f2, f3) => {
-  console.log(`Fruits: ${f1}, ${f2} and ${f3}`);
-};
-
-getFruits(...fruits); 
-
-// Output
-Fruits: Apple, Orange and Banana
-```
-
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-spread-operator-jdhoe6?file=/src/index.js)**
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 **2.5. Spread syntax for object literals:**
 
@@ -140,23 +120,6 @@ const employee = { ...obj1, ...obj2 }
 
 console.log(employee); // { "id": 101, "name": "Rajiv Sandal", "age": 35, "country": "INDIA" }
 ```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-**3. Sets:**  
-
-Sets are a new object type with ES6 (ES2015) that allow to create collections of unique values. The values in a set can be either simple primitives like strings or integers, but more complex object types like object literals or arrays can also be part of a set.
-
-```js
-let numbers = new Set([10, 20, 20, 30, 40, 50]);
-
-console.log(numbers); // Set(5) {10, 20, 30, 40, 50}
-console.log(typeof numbers); // Object
-```
-
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-sets-chwvp0)**
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -178,26 +141,6 @@ add(10, 30); // 40
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-**5. repeat():**  
-
-The `repeat()` method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.
-
-```js
-const msg = "Hello World \n";
-
-console.log(`${msg.repeat(3)}`);
-
-// Output: 
-Hello World
-Hello World
-Hello World
-```
-
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-repeat-d3ko3z?file=/src/index.js)**
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 **6. Arrow Function (=>):**
 
@@ -213,48 +156,7 @@ console.log(add(10, 20)); // 30
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-**7. Arrow function with `this`**
 
-```js
-var person = {
-  name: "Diksha",
-  actions: ["bike", "hike", "ski", "surf"],
-  printActions: function() {
-    var _this = this;
-    this.actions.forEach(function(action) {
-      var str = _this.name + " likes to " + action;
-      console.log(str);
-    });
-  }
-};
-person.printActions();
-
-// Arrow function
-let person = {
-  name: "Diksha",
-  actions: ["bike", "hike", "ski", "surf"],
-  printActions() {
-    this.actions.forEach((action) => {
-      let str = this.name + " likes to " + action;
-      console.log(str);
-    });
-  }
-};
-
-person.printActions();
-
-// Output:
-Diksha likes to bike 
-Diksha likes to hike 
-Diksha likes to ski 
-Diksha likes to surf
-```
-
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-arrow-function-kh1v84?file=/src/index.js)**
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 **8. Destructing Assignment:**
 
@@ -284,67 +186,6 @@ console.log(description); // The iPhone is a smartphone developed by Apple
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-**9. Generators:**  
-
-A generator is a function that can stop midway and then continue from where it stopped. In short, a generator appears to be a function but it behaves like an `iterator`.
-
-```js
-function* generator(num) {
-  yield num + 10;
-  yield num + 20;
-  yield num + 30;
-}
-let gen = generator(10);
-
-console.log(gen.next().value); // 20
-console.log(gen.next().value); // 30
-console.log(gen.next().value); // 40
-```  
-
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-generators-pboss2?file=/src/index.js)**
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-**10. Symbols:**  
-
-They are tokens that serve as unique IDs. We create symbols via the factory function Symbol(). Symbols primary use case is for making private object properties, which can be only of type String or Symbol (Numbers are automatically converted to Strings).
-
-```js
-const symbol1 = Symbol();
-const symbol2 = Symbol(42);
-const symbol3 = Symbol("Hi");
-
-console.log(typeof symbol1); // symbol
-console.log(symbol3.toString()); // Symbol(Hi)
-console.log(Symbol("Hi") === Symbol("Hi")); // false
-```
-
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-symbols-5oedjv?file=/src/index.js)**
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-**11. Iterator:**  
-  
-The iterable is a interface that specifies that an object can be accessible if it implements a method who is key is `[symbol.iterator]`.
-
-```js
-const title = "ES6";
-const iterateIt = title[Symbol.iterator]();
-
-console.log(iterateIt.next().value); //output: E
-console.log(iterateIt.next().value); //output: S
-console.log(iterateIt.next().value); //output: 6
-```
-
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-iterator-ceqbrw?file=/src/index.js)**
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 
 ## # VARIABLES
 
@@ -525,190 +366,6 @@ baz = 'qux';
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is Hoisting in JavaScript?***
-
-JavaScript **Hoisting** refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
-
-Hoisting allows functions to be safely used in code before they are declared.
-
-**Example 01:** Function Hoisting
-
-One of the advantages of hoisting is that it lets you use a function before you declare it in your code.
-
-```js
-getName("Sadhika Sandal");
-
-function getName(name) {
-  console.log("Hello " + name);
-}
-
-// Output
-Hello Sadhika Sandal
-```
-
-**Example 02:** Variable Hoisting  
-
-```js
-console.log(message); // output : undefined
-var message = "The variable Has been hoisted";
-```
-
-The above code looks like as below to the interpreter,
-
-```js
-var message;
-console.log(message);
-message = "The variable Has been hoisted";
-```
-
-**Example 03:** `let` and `const` hoisting
-
-All declarations (function, var, let, const and class) are hoisted in JavaScript, while the `var` declarations are initialized with `undefined`, but `let` and `const` declarations remain uninitialized.
-
-```js
-console.log(x);
-let x = 10;
-
-// Output: ReferenceError: x is not defined
-```
-
-They will only get initialized when their lexical binding (assignment) is evaluated during runtime by the JavaScript engine. This means we can\'t access the variable before the engine evaluates its value at the place it was declared in the source code. This is what we call **Temporal Dead Zone**, A time span between variable creation and its initialization where they can\'t be accessed.
-
-*Note: JavaScript only hoists declarations, not initialisation*
-
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-hoisting-l745nc?file=/src/index.js)**
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is the Temporal Dead Zone in ES6?***
-
-In ES6, let bindings are not subject to Variable Hoisting, which means that let declarations do not move to the top of the current execution context. Referencing the variable in the block before the initialization results in a `ReferenceError` (contrary to a variable declared with var, which will just have the undefined value). The variable is in a “temporal dead zone” from the start of the block until the initialization is processed.
-
-```javascript
-console.log(aVar); // undefined
-console.log(aLet); // causes ReferenceError: aLet is not defined
-var aVar = 1;
-let aLet = 2;
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is the purpose of double exclamation?***
-
-The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. `0`, `null`, `undefined`, etc.), it will be `false`, otherwise, `true`.
-
-For example, you can test IE version using this expression as below,
-
-```js
-let isIE11 = false;
-isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./);
-console.log(isIE11); // returns true or false
-```
-
-If you do not use this expression then it returns the original value.
-
-```js
-console.log(navigator.userAgent.match(/Trident.*rv[ :]*11\./));  // returns either an Array or null
-```
-
-*Note: The expression !! is not an operator, but it is just twice of ! operator*.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***In JavaScript, what is the difference between `var x = 1` and `x = 1`?***
-
-`var x = 1`:
-
-* Allowed in 'strict mode'.
-* The var statement declares a function-scoped or globally-scoped variable, optionally initializing it to a value.
-* Variables declared using var inside a { } block can be accessed from outside the block.
-* Variables defined using var inside a function are not accessible (visible) from outside the function.
-* Duplicate variable declarations using var will not trigger an error, even in strict mode, and the variable will not lose its value unless another assignment is performed.
-
-```js
-var x = 1;
-
-if (x === 1) {
-  var x = 2;
-
-  console.log(x);
-  // expected output: 2
-}
-
-console.log(x);
-// expected output: 2
-```
-
-```js
-var x = 5; // global
-function someThing(y) {
-  var x = 3; // local
-  var z = x + y;
-  console.log(z);
-}
-someThing(4); // 7
-console.log(x); // 5
-```
-
-`x = 1`:
-
-* Not allowed in 'strict mode'.
-* Undeclared Variables like: x = 1 is accessible in: (Block scope - Function scope - Global scope)
-* Outside of strict mode, however, if you assign a value to a name that has not been declared with let, const, or var, you\'ll end up creating a new global variable. It will be global no matter how deeply nested within functions and blocks your code is, which is almost certainly not what you want, is bug-prone, and is one of the best reasons for using strict mode!
-* Global variables created in this accidental way are like global variables declared with var: they define properties of the global object.
-* Unlike the properties defined by proper var declarations, these properties can be deleted with the delete operator.
-* Not recommended.
-
-```js
-var x = 5; // global
-function someThing(y) {
-  x = 1; // still global!
-  var z = x + y;
-  console.log(z);
-}
-someThing(4) // 5
-console.log(x) // 1
-```
-
-**Example:**
-
-```js
-{
-  console.log(x + y); // NaN
-  var x = 1;
-  var y = 2;
-}
-```
-
-```js
-{
-  console.log(x + y); // Uncaught ReferenceError: x is not defined
-   x = 1;
-   y = 2;
-}
-```
-
-<br/>
-
-|               | var x = 1 | x = 1 |
-|:---:          | :---:     | :---:|
-|Strict mode    | &#10004;  | &#10060; |
-|Block scope    | &#10060;  | &#10004; |
-|Function scope | &#10004;  | &#10004; |
-|Global scope   | &#10004;  | &#10004; |
-|Hoisting       | &#10004;  | &#10060; |
-|Reassigning    | &#10004;  | &#10004; |
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***How do you assign default values to variables?***
 
 You can use the logical or operator `||` in an assignment expression to provide a default value. The syntax looks like as below,
@@ -765,33 +422,6 @@ Hoist(20);
 ```
 
 **&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-variable-shadowing-dvibcw?file=/src/index.js)**
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***Explain `var self = this` in JavaScript?***
-
-`self` is being used to maintain a reference to the original this even as the context is changing. It is a technique often used in event handlers (especially in closures).
-
-`this` is a JavaScript keyword which refers to the current context. Unlike other programming languages, JavaScript does not have block scoping(in C open/close {} curly braces refers to a block). JavaScript has two scopes namely, global and local scope.
-
-```js
-// this Context
-const context = {
-  prop: 10,
-  getCurrentContext: function () {
-    return this.prop;
-  }
-};
-
-console.log(context.getCurrentContext());
-// expected output: 10
-```
-
-*Note: 'self' should not be used this way anymore, since modern browsers provide a global variable self pointing to the global object of either a normal window or a WebWorker.*
-
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/js-self-this-k1w0e8?file=/src/index.js)**
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
