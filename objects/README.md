@@ -2,7 +2,7 @@
 
 <br/>
 
-## Q. ***What are the possible ways to create objects in JavaScript?***
+## Q. ***YO-What are the possible ways to create objects in JavaScript?***
 
 **a.) Object constructor**: The simpliest way to create an empty object is using Object constructor. Currently this approach is not recommended.
 
@@ -85,7 +85,7 @@ var object = new function() {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the recommendations to create new object?***
+## Q. ***YO-What are the recommendations to create new object?***
 
 It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it is type to create the objects.
 
@@ -113,7 +113,7 @@ var v7 = function(){};
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Can you give an example for destructuring an object?***
+## Q. ***YO-Can you give an example for destructuring an object?***
 
 Destructuring is an expression available in ES6 which enables a succinct and convenient way to extract values of Objects or Arrays and place them into distinct variables.
 
@@ -130,7 +130,7 @@ console.log(q); // true
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you clone an object in JavaScript?***
+## Q. ***YO-How do you clone an object in JavaScript?***
 
 Using the object spread operator `...`, the object own enumerable properties can be copied into the new object. This creates a shallow clone of the object.
 
@@ -151,7 +151,7 @@ Other alternatives include:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between native, host and user objects?***
+## Q. ***YO-What is the difference between native, host and user objects?***
 
 **1. Native Objects** 
 
@@ -169,7 +169,7 @@ Are objects defined in the javascript code. For example, User object created for
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the properties of Intl object?***
+## Q. ***NO-What are the properties of Intl object?***
 
 Below are the list of properties available on Intl object,
 1. **Collator:** These are the objects that enable language-sensitive string comparison.
@@ -183,7 +183,7 @@ Below are the list of properties available on Intl object,
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain the difference between mutable and immutable objects?***
+## Q. ***YO-Explain the difference between mutable and immutable objects?***
 
 Immutability is a core principle in functional programming, and has lots to offer to object-oriented programs as well. A mutable object is an object whose state can be modified after it is created. An immutable object is an object whose state cannot be modified after it is created.
 
@@ -191,7 +191,7 @@ Immutability is a core principle in functional programming, and has lots to offe
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is an example of an immutable object in JavaScript?***
+## Q. ***NO-What is an example of an immutable object in JavaScript?***
 
 In JavaScript, some built-in types (numbers, strings) are immutable, but custom objects are generally mutable.
 
@@ -254,7 +254,7 @@ Freezing an object does not allow new properties to be added to an object and pr
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How can you achieve immutability in your own code?***
+## Q. ***NO-How can you achieve immutability in your own code?***
 
 One way to achieve immutability is to use libraries like [immutable.js](http://facebook.github.io/immutable-js/), [mori](https://github.com/swannodette/mori) or [immer](https://github.com/immerjs/immer).
 
@@ -276,7 +276,7 @@ const alienJohn = { ...john, race: 'alien' }; // {race: "alien", name: "John"}
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the drawback of declaring methods directly in JavaScript objects?***
+## Q. ***NO-What is the drawback of declaring methods directly in JavaScript objects?***
 
 One of the drawback of declaring methods directly in JavaScript objects is that they are very memory inefficient.  When you do that, a new copy of the method is created for each instance of an object. Let us see it on example:
 
@@ -309,7 +309,7 @@ Here each instance variable `emp1`, `emp2`, `emp3` has own copy of `formatSalary
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you compare Object and Map?***
+## Q. ***NO-How do you compare Object and Map?***
 
 **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases.
 
@@ -324,7 +324,7 @@ Here each instance variable `emp1`, `emp2`, `emp3` has own copy of `formatSalary
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to extend built-in objects?***
+## Q. ***NO-How to extend built-in objects?***
 
 All objects in JS contains a prototype property, even the variables we declare. Since we don\'t have access to the JS source code, thus, we cannot insert our custom functionality in String object by fiddling with JS source code, we use the String object’s prototype as another approach to insert our functionality.
 ```js
@@ -350,7 +350,7 @@ result.regexIt();
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is shallow copy and deep copy in javascript?***
+## Q. ***YO-What is shallow copy and deep copy in javascript?***
 
 **Shallow copy**
 
@@ -388,7 +388,7 @@ console.log(newObj); // { a: 1, b: { c: 2 } } (New Object Intact!)
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Write code for merge two JavaScript Object dynamically?***
+## Q. ***NO-Write code for merge two JavaScript Object dynamically?***
 
 Let say you have two objects 
 
@@ -440,7 +440,7 @@ function merge(toObj, fromObj) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you check if a key exists in an object?***
+## Q. ***YO-How do you check if a key exists in an object?***
 
 **a.) Using in operator:** You can use the in operator whether a key exists in an object or not
 
@@ -464,7 +464,7 @@ obj.hasOwnProperty("key") // true
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you loop through or enumerate javascript object?***
+## Q. ***YO-How do you loop through or enumerate javascript object?***
 
 You can use the `for-in` loop to loop through javascript object. You can also make sure that the key you get is an actual property of an object, and doesn\'t come from the prototype using `hasOwnProperty` method.
 
@@ -486,7 +486,7 @@ for (var key in object) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you test for an empty object?***
+## Q. ***NO-How do you test for an empty object?***
 
 **a.) Using Object keys(ECMA 5+):** You can use object keys length along with constructor type.
 
@@ -504,7 +504,7 @@ Object.entries(obj).length === 0 && obj.constructor === Object
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is use of Proxies in es6?
+## Q. NO-What is use of Proxies in es6?
 
 The Proxy object is used to define custom behavior for fundamental operations (e.g. property lookup, assignment, enumeration, function invocation, etc).
 
@@ -552,7 +552,7 @@ There are many real-world applications for Proxies
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is a proxy object?***
+## Q. ***NO-What is a proxy object?***
 
 The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows,
 ```js
@@ -581,7 +581,7 @@ In the above code, it uses `get` handler which define the behavior of the proxy 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is Proxies and Reflection in JavaScript?***
+## Q. ***NO-What is Proxies and Reflection in JavaScript?***
 
 JavaScript support for the Proxy and Reflect objects allowing you to intercept and define custom behavior for fundamental language operations (e.g. property lookup, assignment, enumeration, function invocation, etc). 
 
@@ -617,7 +617,7 @@ Reflect.apply(''.charAt, 'ponies', [3]); // "i"
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you display the current date in javascript?***
+## Q. ***YO-How do you display the current date in javascript?***
 
 You can use `new Date()` to generate a new Date object containing the current date and time. 
 
@@ -637,7 +637,7 @@ document.write(today);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you add a key value pair in javascript?***
+## Q. ***YO-How do you add a key value pair in javascript?***
 
 There are two possible solutions to add new properties to an object. Let us take a simple object to explain these solutions.
 
@@ -664,7 +664,7 @@ obj["key3"] = "value3";
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is non-enumerable property in JavaScript and how you can create one?***
+## Q. ***NO-What is non-enumerable property in JavaScript and how you can create one?***
 
 Object can have properties that don\'t show up when you iterate through object using for...in loop or using Object.keys() to get an array of property names. This properties is know as non-enumerable properties.
 
@@ -715,7 +715,7 @@ Changing non-enumerable property value will return error in `strict mode`. In no
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you check whether an object can be extendable or not?***
+## Q. ***No-How do you check whether an object can be extendable or not?***
 
 The `Object.isExtensible()` method is used to determine if an object is extensible or not. i.e, Whether it can have new properties added to it or not.
 ```js
@@ -728,7 +728,7 @@ console.log(Object.isExtensible(newObject)); //true
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the different ways to make an object non-extensible?***
+## Q. ***NO-What are the different ways to make an object non-extensible?***
 
 * `Object.preventExtensions()`
 * `Object.seal()`
@@ -751,7 +751,7 @@ Object.isExtensible(frozenObject); // false
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the object type?***
+## Q. ***NO-What is the object type?***
 
 The object type refers to a compound value where you can set properties (named locations) that each hold their own values of any type.
 
@@ -788,7 +788,7 @@ ToDo
 
 # # WINDOW OBJECT
 
-## Q. ***What is the difference between window and document?***
+## Q. ***YO-What is the difference between window and document?***
 
 The window is the first thing that gets loaded into the browser. This window object has the majority of the properties like length, innerWidth, innerHeight, name, if it has been closed, its parents, and more.
 
@@ -804,7 +804,7 @@ The document object is html, aspx, php, or other document that will be loaded in
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you access history in javascript?***
+## Q. ***YO-How do you access history in javascript?***
 
 The `window.history` object contains the browsers history. You can load previous and next URLs in the history using `back()` and `next()` methods.
 
@@ -823,7 +823,7 @@ function goForward() {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you find operating system details?***
+## Q. ***NO-How do you find operating system details?***
 
 The `window.navigator` object contains information about the visitor\'s browser os details. Some of the OS properties are avaialble under platform property,
 
@@ -835,7 +835,7 @@ console.log(navigator.platform);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is BOM?***
+## Q. ***NO-What is BOM?***
 
 The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It consists of the objects navigator, history, screen, location and document which are children of window. The Browser Object Model is not standardized and can change based on different browsers.
 
@@ -843,7 +843,7 @@ The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. It co
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you redirect new page in javascript?***
+## Q. ***NO-How do you redirect new page in javascript?***
 
 In vanilla javascript, you can redirect to a new page using `location` property of window object. The syntax would be as follows,
 
@@ -857,7 +857,7 @@ function redirect() {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you get the current url with javascript?***
+## Q. ***NO-How do you get the current url with javascript?***
 
 You can use `window.location.href` expression to get the current url path and you can use the same expression for updating the URL too. You can also use `document.URL` for read-only purpose but this solution has issues in FF.
 
@@ -869,7 +869,7 @@ console.log('location.href', window.location.href); // Returns full URL
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the various url properties of location object?***
+## Q. ***NO-What are the various url properties of location object?***
 
 The below `Location` object properties can be used to access URL components of the page
 
@@ -888,7 +888,7 @@ The below `Location` object properties can be used to access URL components of t
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do get query string values in javascript?***
+## Q. ***NO-How do get query string values in javascript?***
 
 You can use URLSearchParams to get query string values in javascript. Let us see an example to get the client code value from URL query string,
 
@@ -901,7 +901,7 @@ const clientCode = urlParams.get('clientCode');
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is difference between window.frames window.parent and window.top in JavaScript?***
+## Q. ***NO-What is difference between window.frames window.parent and window.top in JavaScript?***
 
 ```
 window.frames – the collection of “children” windows (for nested frames).
@@ -912,7 +912,7 @@ window.top – the reference to the topmost parent window.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the properties used to get size of window?***
+## Q. ***YO-What are the properties used to get size of window?***
 
 You can use innerWidth, innerHeight, clientWidth, clientHeight properties of windows, document element and document body objects to find the size of a window. Let us use them combination of these properties to calculate the size of a window or document,
 
@@ -930,7 +930,7 @@ var height = window.innerHeight
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the ways to execute javascript after page load?***
+## Q. ***NO-What are the ways to execute javascript after page load?***
 
 You can execute javascript after page load in many different ways,  
 **a.) window.onload:**
@@ -949,7 +949,7 @@ document.onload = function ...
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Difference between document `load` event and document `DOMContentLoaded` event?***
+## Q. ***NO-Difference between document `load` event and document `DOMContentLoaded` event?***
 
 The `DOMContentLoaded` event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
 
@@ -959,7 +959,7 @@ The `DOMContentLoaded` event is fired when the initial HTML document has been co
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What do you understand by Screen objects?***
+## Q. ***YO-What do you understand by Screen objects?***
 
 * **window**: is the execution context and global object for that context's JavaScript
 * **document**: contains the DOM, initialized by parsing HTML
@@ -977,7 +977,7 @@ The `DOMContentLoaded` event is fired when the initial HTML document has been co
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you change style of a HTML element?***
+## Q. ***NO-How do you change style of a HTML element?***
 
 You can change inline style or classname of a HTML element using javascript
 1. **Using style property:** You can modify inline style using style property
@@ -994,7 +994,7 @@ document.getElementById("title").style.className = "custom-title";
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you print the contents of web page?***
+## Q. ***NO-How do you print the contents of web page?***
 
 The window object provided print() method which is used to prints the contents of the current window. It opens Print dialog box which lets you choose between various printing options. 
 ```html
@@ -1006,7 +1006,7 @@ The window object provided print() method which is used to prints the contents o
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do I modify the url without reloading the page?***
+## Q. ***NO-How do I modify the url without reloading the page?***
 
 The `window.localtion.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. Example:
 ```js
@@ -1016,7 +1016,7 @@ window.history.pushState('newPage', 'Title', '/newPage.html');
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***When would you use `document.write()`?***
+## Q. ***NO-When would you use `document.write()`?***
 
 `document.write()` writes a string of text to a document stream opened by `document.open()`. When `document.write()` is executed after the page has loaded, it will call `document.open` which clears the whole document (`<head>` and `<body>` removed!) and replaces the contents with the given parameter value. Hence it is usually considered dangerous and prone to misuse.
 
@@ -1024,7 +1024,7 @@ window.history.pushState('newPage', 'Title', '/newPage.html');
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between an attribute and a property?***
+## Q. ***NO-What is the difference between an attribute and a property?***
 
 Attributes are defined on the HTML markup whereas properties are defined on the DOM. For example, the below HTML element has 2 attributes type and value,
 
@@ -1051,7 +1051,7 @@ console.log(input.value); // Good evening
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between an "attribute" and a "property"?***
+## Q. ***NO-What is the difference between an "attribute" and a "property"?***
 
 Attributes are defined on the HTML markup but properties are defined on the DOM. To illustrate the difference, imagine we have this text field in our HTML: `<input type="text" value="Hello">`.
 
@@ -1072,7 +1072,7 @@ console.log(input.value); // Hello World!
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?***
+## Q. ***NO-Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?***
 
 The `load` event fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links and sub-frames have finished loading.
 
@@ -1082,7 +1082,7 @@ The DOM event `DOMContentLoaded` will fire after the DOM for the page has been c
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between firstChild and firstElementChild?***
+## Q. ***NO-What is the difference between firstChild and firstElementChild?***
 
 **firstChild:**
 
@@ -1124,7 +1124,7 @@ The difference between this property and firstElementChild, is that firstChild r
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-# # CLASSES
+# # CLASSES NO-
 
 ## Q. ***Explain how prototypal inheritance works?***
 
