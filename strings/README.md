@@ -2,7 +2,7 @@
 
 <br/>
 
-## Q. ***What is the difference between slice and splice?***
+## Q. ***YO-What is the difference between slice and splice?***
 
 **1. slice():**
 
@@ -51,7 +51,7 @@ console.log(numbers); // Original array is mutated.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you check whether a string contains a substring?***
+## Q. ***YO-How do you check whether a string contains a substring?***
 
 There are 3 fastest ways to check whether a string contains a substring or not,  
 
@@ -98,7 +98,7 @@ str.includes('Node', 5) //true
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you trim a string in javascript?***
+## Q. ***YO-How do you trim a string in javascript?***
 
 The `trim()` method removes whitespace from both sides of a string. JavaScript provides 3 simple functions on how to trim strings.
 
@@ -144,7 +144,7 @@ console.log(phoneNumber.trimEnd()); // => " 80-555-123"
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is eval function in javascript?***
+## Q. ***NO-What is eval function in javascript?***
 
 The `eval()` function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
 
@@ -178,7 +178,7 @@ eval(expression.toString()); // returns 30
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you check if a string starts with another string?***
+## Q. ***YO-How do you check if a string starts with another string?***
 
 You can use ECMAScript 6 `String.prototype.startsWith()` method to check a string starts with another string or not. But it is not yet supported in all browsers. Let us see an example to see this usage,
 

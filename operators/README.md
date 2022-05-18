@@ -2,7 +2,7 @@
 
 <br/>
 
-## Q. ***What are various operators supported by javascript?***
+## Q. ***YO-What are various operators supported by javascript?***
 
 An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
 
@@ -90,7 +90,7 @@ typeof a // number
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the bitwise operators available in javascript?***
+## Q. ***NO-What are the bitwise operators available in javascript?***
 
 Below are the list of bit-wise logical operators used in JavaScript
 
@@ -122,7 +122,7 @@ Below are the list of bit-wise logical operators used in JavaScript
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between == and === operators?***
+## Q. ***YO-What is the difference between == and === operators?***
 
 JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators takes type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
 
@@ -157,7 +157,7 @@ null === undefined // false
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is typeof operator?***
+## Q. ***YO-What is typeof operator?***
 
 In JavaScript, the typeof operator returns the data type of its operand in the form of a string. The operand can be any object, function, or variable.
 
@@ -203,7 +203,7 @@ console.log(typeof a); // "function"
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is an Unary operator?***
+## Q. ***NO-What is an Unary operator?***
 
 The unary(+) operator is used to convert a variable to a number. If the variable cannot be converted, it will still become a number but with the value NaN.
 
@@ -225,7 +225,7 @@ console.log(typeof a, typeof b, b); // string, number, NaN
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the purpose of delete operator?***
+## Q. ***YO-What is the purpose of delete operator?***
 
 The delete keyword is used to delete the property as well as its value.
 
@@ -240,7 +240,7 @@ console.log(user); // {name: "Sadhika Chaudhuri"}
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is a conditional operator in javascript?***
+## Q. ***YO-What is a conditional operator in javascript?***
 
 The conditional (ternary) operator is the only JavaScript operator that takes three operands which acts as a shortcut for if statement.
 
@@ -254,7 +254,7 @@ console.log(isAuthenticated ? 'Hello, welcome' : 'Sorry, you are not authenticat
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Can you apply chaining on conditional operator?***
+## Q. ***NO-Can you apply chaining on conditional operator?***
 
 Yes, you can apply chaining on conditional operator similar to if … else if … else if … else chain.
 
@@ -286,7 +286,7 @@ function getValue(someParam) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between `==` and `===`?***
+## Q. ***YO-What is the difference between `==` and `===`?***
 
 The `==` is the abstract equality operator while `===` is the strict equality operator. The `==` operator will compare for equality after doing any necessary type conversions.
 
@@ -311,7 +311,7 @@ console.log(x == undefined); // true
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between `typeof` and `instanceof` operator?***
+## Q. ***YO-What is the difference between `typeof` and `instanceof` operator?***
 
 The `typeof` operator checks if a value has type of primitive type which can be one of boolean, function, object, number, string, undefined and symbol (ES6).
 
@@ -341,7 +341,7 @@ b instanceof String; // returns true
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the output of below spread operator array?***
+## Q. ***YO-What is the output of below spread operator array?***
 
 ```js
 [...'Hello']

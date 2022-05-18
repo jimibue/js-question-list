@@ -2,7 +2,7 @@
 
 <br/>
 
-## Q. ***What are global variables?***
+## Q. ***YO-What are global variables?***
 
 Global variables are declared outside of a function or declared with a window object for accessibility throughout the program (unless shadowed by locals). If you declare a variable without using var, even if it\'s inside a function, it will still be seen as global.
 
@@ -55,7 +55,7 @@ console.log(getValue()); // 100
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are template literals in es6?***
+## Q. ***YO-What are template literals in es6?***
 
 Template literals help make it simple to do string interpolation, or to include variables in a string.
 
@@ -92,7 +92,7 @@ document.body.innerHTML = `
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the differences between variables created using `let`, `var` or `const`?***
+## Q. ***YO-What are the differences between variables created using `let`, `var` or `const`?***
 
 Variables declared using the `var` keyword are scoped to the function in which they are created, or if created outside of any function, to the global object. `let` and `const` are _block scoped_, meaning they are only accessible within the nearest set of curly braces (function, if-else block, or for-loop).
 
@@ -177,7 +177,7 @@ baz = 'qux';
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is Hoisting in JavaScript?***
+## Q. ***NO-What is Hoisting in JavaScript?***
 
 JavaScript **Hoisting** refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
 
@@ -234,7 +234,7 @@ They will only get initialized when their lexical binding (assignment) is evalua
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the Temporal Dead Zone in ES6?***
+## Q. ***NO-What is the Temporal Dead Zone in ES6?***
 
 In ES6, let bindings are not subject to Variable Hoisting, which means that let declarations do not move to the top of the current execution context. Referencing the variable in the block before the initialization results in a `ReferenceError` (contrary to a variable declared with var, which will just have the undefined value). The variable is in a “temporal dead zone” from the start of the block until the initialization is processed.
 
@@ -249,7 +249,7 @@ let aLet = 2;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the purpose of double exclamation?***
+## Q. ***NO-What is the purpose of double exclamation?***
 
 The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. `0`, `null`, `undefined`, etc.), it will be `false`, otherwise, `true`.
 
@@ -273,7 +273,7 @@ console.log(navigator.userAgent.match(/Trident.*rv[ :]*11\./));  // returns eith
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***In JavaScript, what is the difference between `var x = 1` and `x = 1`?***
+## Q. ***NO-In JavaScript, what is the difference between `var x = 1` and `x = 1`?***
 
 `var x = 1`:
 
@@ -361,7 +361,7 @@ console.log(x) // 1
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you assign default values to variables?***
+## Q. ***YO-How do you assign default values to variables?***
 
 You can use the logical or operator `||` in an assignment expression to provide a default value. The syntax looks like as below,
 
@@ -375,7 +375,7 @@ As per the above expression, variable 'a 'will get the value of 'c' only if 'b' 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the precedence order between local and global variables?***
+## Q. ***YO-What is the precedence order between local and global variables?***
 
 A local variable takes precedence over a global variable with the same name. 
 
@@ -398,7 +398,7 @@ Good Evening
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is variable shadowing in javascript?***
+## Q. ***YO-What is variable shadowing in javascript?***
 
 Variable shadowing occurs when a variable declared within a certain scope (decision block, method, or inner class) has the same name as a variable declared in an outer scope. This outer variable is said to be shadowed.
 
@@ -422,7 +422,7 @@ Hoist(20);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain `var self = this` in JavaScript?***
+## Q. ***NO-Explain `var self = this` in JavaScript?***
 
 `self` is being used to maintain a reference to the original this even as the context is changing. It is a technique often used in event handlers (especially in closures).
 
@@ -449,7 +449,7 @@ console.log(context.getCurrentContext());
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you swap variables using Destructuring Assignment?***
+## Q. ***NO-How do you swap variables using Destructuring Assignment?***
 
 ```js
 var x = 10, y = 20;

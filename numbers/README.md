@@ -2,7 +2,7 @@
 
 <br/>
 
-## Q. ***How do you generate random integers?***
+## Q. ***YO-How do you generate random integers?***
 
 The `Math.random()` function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1). For example, if you want generate random integers between 1 to 100, the multiplication factor should be 100,
 
@@ -27,7 +27,7 @@ console.log(getRandomNumber(10)); // returns a random integer from 1 to 10
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is isNaN?***
+## Q. ***YO-What is isNaN?***
 
 The `isNaN()` function determines whether a value is NaN ( Not a Number ) or not. This function returns `true` if the value equates to NaN. The `isNaN()` method converts the value to a number before testing it.
 
@@ -47,7 +47,7 @@ Number.isNaN('Hello'); // false
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the purpose of isFinite function?***
+## Q. ***YO-What is the purpose of isFinite function?***
 
 The global `isFinite()` function determines whether the passed value is a finite number. It returns `false` if the value is `+infinity`, `-infinity`, or `NaN` (Not-a-Number), otherwise it returns true.
 
